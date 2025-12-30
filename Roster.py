@@ -114,7 +114,7 @@ class Roster(object):
                 messageList.append(student.studentName + " ID#" + student.id)
                 if student.courseList:
                     for course in student.courseList:
-                        messageList.append(course.courseName + " " + course.courseGrade)
+                        messageList.append(course.courseName + " " + course.semesteer + ": " + course.courseGrade)
                 messageList.append('\n')   
         return messageList
     
